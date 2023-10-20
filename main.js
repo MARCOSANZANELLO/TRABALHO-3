@@ -1,29 +1,8 @@
+// Pom ----------------------------------------
 function tocaSomPom () {
     document.querySelector('#som_tecla_pom').play();
 }
 
-document.querySelector('.tecla_pom').onclick = tocaSomPom;
+const listaDeTeclas = document.querySelectorAll('.tecla');
 
-function tocaSomClap () {
-    document.querySelector('#som_tecla_clap').play();
-}
-
-document.querySelector('.tecla_pom').onclick = tocaSomClap;
-
-function tocaSomTim () {
-    document.querySelector('#som_tecla_tim').play();
-}
-
-document.querySelector('.tecla_tim').onclick = tocaSomTim;
-
-function tocaSomPuff () {
-    document.querySelector('#som_tecla_puff').play();
-}
-
-document.querySelector('.tecla_puff').onclick = tocaSomPuff;
-
-function tocaSomSplash () {
-    document.querySelector('#som_tecla_splas').play();
-}
-
-document.querySelector('.tecla_splsh').onclick = tocaSomSplash;
+listaDeTeclas[0].onclick = tocaSomPom;
